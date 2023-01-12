@@ -91,7 +91,7 @@
           <a class="" href="">Show</a>
         </td>
         <td>
-          <a class="6" href="">Edit</a>
+          <a class="" href="">Edit</a>
         </td>
         <td>
           <a class="">Destroy</a>
@@ -129,7 +129,7 @@
 
   <p>タイトル</p>
   <span>
-    <%= book.title %>
+   <%= link_to book.title, book_path(book.id) %>
   </span>
 
 <% end %>
